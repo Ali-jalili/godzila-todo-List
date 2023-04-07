@@ -44,7 +44,7 @@ const membersReducer = (state = initialState, action) => {
 
         case actionTypes.removeMember:
             return {
-                ..state,
+                ...state,
                 members: state.members.filter((member) => member._id !== action.payload)
             };
 
